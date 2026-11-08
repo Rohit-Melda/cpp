@@ -16,14 +16,14 @@ int main() {
         cout << "4. Exit\n";
         cout << "Enter your choice: ";
 
-        if (!(cin >> choice)) {          // handle non-numeric input
+        if (!(cin >> choice)) {          
             cin.clear();
             cin.ignore(1000, '\n');
             choice = 0;
         }
 
         switch (choice) {
-            case 1:                      // PUSH
+            case 1:                    
                 if (top == MAX - 1) {
                     cout << "Stack Overflow! Stack is full.\n";
                 } else {
@@ -35,7 +35,7 @@ int main() {
                 }
                 break;
 
-            case 2:                      // POP
+            case 2:                      
                 if (top == -1) {
                     cout << "Stack Underflow! Stack is empty.\n";
                 } else {
@@ -44,7 +44,7 @@ int main() {
                 }
                 break;
 
-            case 3:                      // DISPLAY
+            case 3:                     
                 if (top == -1) {
                     cout << "Stack is empty.\n";
                 } else {
@@ -57,7 +57,7 @@ int main() {
                 }
                 break;
 
-            case 4:                      // EXIT
+            case 4:                    
                 cout << "Exiting program. Goodbye!\n";
                 break;
 
